@@ -4,7 +4,7 @@
   </div>
 </div>
 
-<div class="w3-bar w3-bottombar" style="background:#ffffff;">
+<div class="w3-bar w3-border" style="background:#ffffff;">
   <a href="home.php" class="w3-bar-item w3-button" style="text-decoration:none;"><i class="fas fa-home"></i> inicio</a>
 
   <!--<a href="institucion.php" class="w3-bar-item w3-button" style="text-decoration:none;"><i class="fas fa-th"></i> salas</a>-->
