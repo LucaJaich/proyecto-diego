@@ -59,7 +59,7 @@ $fechas = new Fechas();
                     </header>
                     <table class="w3-table-all">
                         <tr>
-                            <th class="w3-button w3-center"><i class="fas fa-users w3-large"></i> 1A-2018</th>
+                            <th class="w3-button w3-center"><a href="grupo.php?id=1A-2018" style="display:block;text-decoration:none;color:black;"><i class="fas fa-users w3-large"></i> 1A-2018</a></th>
                         </tr>
                         <tr>
                             <th class="w3-button w3-center"><i class="fas fa-users w3-large"></i> 1B-2018</th>
@@ -80,7 +80,7 @@ $fechas = new Fechas();
                             <th class="w3-button w3-center"><i class="fas fa-users w3-large"></i> 2A-2018</th>
                         </tr>
                         <tr>
-                            <th class="w3-button w3-center"><i class="fas fa-users w3-large"></i> 2B-2018</th>
+                            <th class="w3-button w3-center"><a href="grupo.php?id=2B-2018" style="display:block;text-decoration:none;color:black;"><i class="fas fa-users w3-large"></i> 2B-2018<a/></th>
                         </tr>
                         <tr>
                             <th class="w3-button w3-center"><i class="fas fa-users w3-large"></i> 2C-2018</th>

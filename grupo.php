@@ -231,7 +231,7 @@ if (!empty($ultimo_apto_higienico[0]['time_stamp'])) {
                 <div class="w3-container">
                   <form action="" method="post">
                     <p class="w3-margin w3-xlarge w3-border-bottom">
-                      <b><?php echo $fila['apellidos'] ?></b>, <?php echo $fila['nombres'] ?>   
+                      <b><?php echo $fila['apellidos'] ?></b>, <?php echo $fila['nombres'] ?>
                       <input type="hidden" name="persona" value="<?php echo $fila['id_persona'] ?>">
 
                     </p>
