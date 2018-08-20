@@ -131,31 +131,6 @@ $grupos = $personas->get_grupos();
         </div>
         </div>
     </div>
-          <div class="w3-row">
-            <?php foreach ($grupos as $fila): ?>
-            <?php $datos_grupos = $personas->get_datos_grupo($fila['identificador']); ?>
-            <div class="w3-third">
-              <div class="w3-margin w3-card-4">
-                <div class="w3-container w3-padding w3-indigo w3-large">
-                  <i class="fas fa-info-circle"></i> <?php echo $fila['identificador']; ?>
-                </div>
-                <div class="w3-small w3-margin">
-                  <div class=" w3-margin-bottom">
-                  </div>
-                  <div class=" w3-margin-bottom">
-                    Usuarios del sistema:
-                    <br>
-                    <?php foreach ($lista_simple_usuarios as $fila): ?>
-                      <a href="perfil_usuario.php?id=<?php echo $fila['id_usuario'] ?>"><?php echo $fila['usuario'] ?></a> -
-                    <?php endforeach; ?>
-                    <br><br>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-        <?php endforeach; ?>
-      </div>
 
     <div class="w3-center w3-margin w3-border-top w3-small">
       <br>
