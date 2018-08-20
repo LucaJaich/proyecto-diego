@@ -1,0 +1,23 @@
+El archivo /includes/dbh.inc.php es la conexión a la DB.
+En la carpeta /includes vas a encontrar algunos archivos con clases que están demás (son parte de otro proyecto mio y no tuve tiempo de limpiarlas).
+
+De mas esta decir que acepto criticas y sugerencias sobre la estructura de mi código.
+
+Algunos links de utilidad...
+Web-App manifest
+https://developers.google.com/web/fundamentals/web-app-manifest/?hl=es
+
+W3.CSS
+https://www.w3schools.com/w3css/
+
+Font Awesome
+https://fontawesome.com/
+
+Charts.js
+https://www.chartjs.org/
+
+jQuery UI
+https://jqueryui.com/
+
+Bootstrap
+https://getbootstrap.com/
