@@ -47,7 +47,7 @@ $fechas = new Fechas();
 
     <div class="w3-card-3 w3-margin">
         <div class="w3-container w3-padding w3-large w3-indigo w3-center">
-            Grupos (<?php echo $nro_grupos ?>)
+            Grupos
         </div>
     </div>
 
