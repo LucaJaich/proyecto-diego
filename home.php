@@ -42,64 +42,71 @@ $grupos = $personas->get_grupos();
 
   <body>
     <?php include 'includes/menu.inc.php'; ?>
-
-    <table class="w3-margin">
-      <tr>
-        <td>
-            <img class="w3-hover-grayscale  w3-border-indigo" src="<?php echo $_SESSION['ortp_foto_usuario'] ?>" alt="avatar_usuario" width="88">
-
-        </td>
-        <td>
-          <div style="margin-left:10px;" class="w3-xlarge">
-            <?php echo $_SESSION['ortp_usuario'] ?>
-          <div class="w3-small">
-            Nivel: <b><?php echo $_SESSION['ortp_nivel_usuario'] ?></b>
-            <br>
-            <a href="#"><i>cambiar contraseña</i></a>
-
-          </div>
-          </div>
-        </td>
-      </tr>
-    </table>
-
-
-
     <div class="w3-row">
-      <div class="w3-third">
-        <div class="w3-margin w3-card-4">
-          <div class="w3-container w3-padding w3-indigo w3-large">
-            <i class="fas fa-info-circle"></i> informacion del sistema
-          </div>
-          <div class="w3-small w3-margin">
-            <!--
-            <div class=" w3-margin-bottom">
-              camas deshabilitadas: n/d
-              <br>
-              camas disponibles: n/d
-              <br>
-              camas reservadas: n/d
-              <br>
-              camas ocupadas: n/d
-            </div>
-          -->
-            <div class=" w3-margin-bottom">
-              Personas: <b><?php echo $nro_personas ?></b>
-              <br>
-              Usuarios: <b><?php echo $total_usuarios ?></b>
-            </div>
-            <div class=" w3-margin-bottom">
-              Usuarios del sistema:
-              <br>
-              <?php foreach ($lista_simple_usuarios as $fila): ?>
-                <a href="perfil_usuario.php?id=<?php echo $fila['id_usuario'] ?>"><?php echo $fila['usuario'] ?></a> -
-              <?php endforeach; ?>
-              <br><br>
+        <div class="w3-third">
+        <div class="w3-row">
+            <div class="w3-margin w3-card-4">
+                <header class="w3-container w3-padding w3-indigo w3-large">
+                    <i class="fas fa-user"></i> Informacion del usuario
+                </header>
+                <table class="w3-margin w3-padding">
+                  <tr>
+                    <td>
+                        <div class="w3-card-2 w3-margin-bottom">
+                        <img class="w3-hover-grayscale w3-border-indig" src="<?php echo $_SESSION['ortp_foto_usuario'] ?>" alt="avatar_usuario" width="88">
+                        </div>
+                    </td>
+                    <td>
+                      <div style="margin-left:10px;margin-bottom:10px;" class="w3-xlarge">
+                        <?php echo $_SESSION['ortp_usuario'] ?>
+                      <div class="w3-small">
+                        Nivel: <b><?php echo $_SESSION['ortp_nivel_usuario'] ?></b>
+                        <br>
+                        <a href="#"><i>cambiar contraseña</i></a>
 
+                      </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+            </div>
+    </div>
+    <div class="w3-row">
+          <div class="w3-margin w3-card-4">
+            <div class="w3-container w3-padding w3-indigo w3-large">
+              <i class="fas fa-info-circle"></i> informacion del sistema
+            </div>
+            <div class="w3-small w3-margin">
+              <!--
+              <div class=" w3-margin-bottom">
+                camas deshabilitadas: n/d
+                <br>
+                camas disponibles: n/d
+                <br>
+                camas reservadas: n/d
+                <br>
+                camas ocupadas: n/d
+              </div>
+            -->
+              <div class=" w3-margin-bottom">
+                Personas: <b><?php echo $nro_personas ?></b>
+                <br>
+                Usuarios: <b><?php echo $total_usuarios ?></b>
+              </div>
+              <div class=" w3-margin-bottom">
+                Usuarios del sistema:
+                <br>
+                <?php foreach ($lista_simple_usuarios as $fila): ?>
+                  <a href="perfil_usuario.php?id=<?php echo $fila['id_usuario'] ?>"><?php echo $fila['usuario'] ?></a> -
+                <?php endforeach; ?>
+                <br><br>
+
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+    </div>
+</div>
+
       <div class="w3-twothird">
         <div class="w3-margin w3-card-4">
           <div class="w3-container w3-padding w3-indigo w3-large">
